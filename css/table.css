@@ -1,0 +1,60 @@
+/*Le damos configuracion a las tablas 1*/
+
+.table1{
+	width: 100%;
+}
+
+.table1 th,tr{
+	height: 50px;
+}
+
+.table1 td:not(.center){
+	padding-left: 5px;
+}
+
+.table1 tr:nth-child(even):not(.separator){
+    background-color: #eee;
+}
+
+.table1 tr:nth-child(odd):not(.separator){
+    background-color: #fff;
+}
+
+
+#tables .separator img{
+	margin-right: 1%;
+}
+/*
+.table1 tbody tr:hover:not(.separator){
+	background-color: black;
+	color: white;
+	transition: all 0.5s;
+	cursor: pointer;
+}
+
+.table1 tbody tr:active:not(.separator){
+	background-color: black;
+	color: white;
+	transition: all 0.5s;
+}*/
+
+/*Aca termina la configuracion de las tablas*/
+
+
+/*Configuramos al segundo tipo de tabla de la pagina destinada a informacion sencilla*/
+
+
+.table2{
+	height: 100%;
+	width: 100%;
+}
+
+.table2 tr:nth-child(even){
+    background-color: #eee;
+}
+
+.table2 tr:nth-child(odd){
+    background-color: #fff;
+}
+
+/*Aca termina la configuracion*/

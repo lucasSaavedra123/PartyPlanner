@@ -1,0 +1,206 @@
+/*Configuramos al menu*/
+
+#verticalMenu{
+	position: absolute;
+	width: 10%;
+	height: 100%;
+}
+
+#verticalMenu .item{
+	width: 100%;
+	height: 8%;
+}
+
+#verticalMenu .item > div{
+	height: 100%; 
+	width: 95%;
+}
+
+#verticalMenu .item:hover{
+		background-color: black;
+		transition: all 1s;
+		cursor: pointer;
+}
+
+#verticalMenu .active{
+	background-color: grey;
+}
+
+/*Aca termina*/
+
+/*Retocamos los iconos del menu*/
+
+#verticalMenu .icon{
+
+	position: absolute;
+	top:50%;
+	left: 50%;
+
+	margin-top: -12px;
+	margin-left: -12px;
+}
+
+/*Aca termina*/
+
+
+/*Le damos forma al logo del menu*/
+
+#verticalMenu #logo{
+	position: relative;
+	left: 0;
+	height: 25%;
+	width: 100%;
+}
+#verticalMenu #logo img{
+	position: absolute;
+	top: 30%;
+	left: 40%;
+	height: 25%;
+}
+
+/*Aca termina*/
+
+
+
+/*Agregamos un menu abajo de las tablas de las mesas o de los invitados para que
+se pueda agregar invitados/mesas*/
+
+#horizontalMenu{
+	position: fixed;
+	height: 10%;
+	width:100%;
+
+	box-shadow: inset 0px 0px 45px -25px rgba(0,0,0,0.75);
+}
+
+#horizontalMenu .item{
+	height: 100%;
+	width: 49%;
+}
+
+#horizontalMenu .item *{
+	position: relative;
+	top:25%;
+}
+
+#horizontalMenu .item img{
+	top: 38%;
+}
+
+#horizontalMenu .item span{
+	margin-right: 2%;
+}
+
+
+/*Aca termina la configuracion del menu*/
+
+/*Configuramos caja de eventos*/
+
+.eventsBox{
+	position: relative;
+	left: 5%;
+	top:5%;
+	margin-bottom: 5%;
+
+	width: 90%;
+	height: 45%;
+	position: relative;
+}
+
+.eventsBox a{
+	position: absolute;
+	left: 0;
+}
+
+.eventsBox img{
+	position: relative;
+	top:18%;
+}
+
+.events{
+	background-color: rgba(255,255,255,0.8);
+
+	width: 90%;
+	height: 50%;
+
+	margin: 4% 4%;
+
+	border-radius: 15px;
+
+	transition: width 1s;
+}
+
+
+.eventTitle{
+
+	padding: 20px;
+
+	position: relative;
+
+	left: 15px;
+}
+
+
+.eventInfo{
+	display: block;
+
+	padding: 10px;
+
+	letter-spacing:1px;
+
+
+
+}
+
+.events a{
+	display: block;
+	float: right;
+
+	margin: 0px 25px;
+}
+
+.eventLogo{
+
+	width: 300px;
+	height: 300px;
+
+	display: block;
+
+	position: relative;
+
+	float: left;
+
+	padding: 13px;
+
+	border-radius: 25px
+}
+
+
+.progress {
+	height:12%; 
+  	display: inline-block;
+  	background-color: #ddd;
+}
+
+.progress span{
+	position: absolute;
+	left: 0;
+	top:25%;
+	
+	width: 100%;
+
+}
+
+.progressBar {
+	height: 100%;
+}
+
+.deleteEventButton{
+	position: relative;
+	top: 10%;
+}
+
+.seeEventButton{
+	position: relative;
+	top: 10%;
+}

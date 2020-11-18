@@ -1,0 +1,976 @@
+﻿/*
+Color de los puntitos para desplazarse: #bdc3c7
+Color del azul de la pagina rgb(82, 158, 204)
+Color del blanco de la pagina #f4f6f7
+Color del blanco: rgb(255,255,255)
+Color del verde en la pagina: #56BC8A
+Color del violeta en la pagina: #af7ac5
+Color del azul oscuro en la pagina: #36465D
+Color del gris de la pagina:  #566573 ;
+Color del azul mas oscuro en la pagina: rgb(32,35,64);
+Color del negro de la pagina: #282828;
+*/
+
+/*Cosas Basicas*/
+
+.pointer{
+	cursor: pointer;
+}
+
+.absolute{
+	position: absolute;
+}
+
+.overlay{
+	z-index: 999;
+}
+
+.width100{
+	width: 100%;
+}
+
+.height100{
+	height: 100%;
+}
+
+.width75{
+	width: 75%;
+}
+
+.height75{
+	height: 75%;
+}
+
+.width50{
+	width: 50%;
+}
+
+.height50{
+	height: 50%;
+}
+
+.width35{
+	width: 35%;
+}
+
+.height35{
+	height: 35%;
+}
+
+.width25{
+	width: 25%;
+}
+
+.height25{
+	height: 25%;
+}
+
+.width10{
+	width: 10%;
+}
+
+.height10{
+	height: 10%;
+}
+
+.lowestPartPosition{
+	bottom: 0;
+}
+
+.highestPartPosition{
+	top: 0;
+}
+
+
+.floatRight{
+	float: right;
+}
+
+.floatLeft{
+	float: left;
+}
+
+.inlineblock *{
+	display: inline-block;
+}
+
+.block > *{
+	display: block;
+}
+
+.blockElement{
+	display: block;
+}
+
+.center {
+	text-align: center;
+}
+
+.autoMargin{
+	margin-left: auto;
+	margin-right: auto; 
+}
+
+.marginLeft2{
+	margin-left: 2%;
+}
+
+.marginRight2{
+	margin-right: 2%;
+}
+
+.justify{
+	text-align: justify;
+}
+
+.greenBackground{
+	background-color: #56BC8A;
+}
+
+.blueBackground{
+	background-color: rgb(82, 158, 204);
+}
+
+.darkestBlueBackground{
+	background-color:rgb(32,35,64);
+}
+
+.redBackground{
+	background-color:#ff6262; 
+}
+
+.greyBackground{
+	background-color:grey; 
+}
+
+.red2Background{
+	background-color:#F0472F; 
+}
+
+.greenBackground{
+	background-color: #31AF90;
+}
+
+.orangeBackground{
+	background-color: #FF7D01;
+}
+
+.darkBlueBackground{
+	background-color: #36465D;
+}
+
+.whiteBackground{
+	background-color: #f4f6f7;
+}
+
+.white2Background{
+	background-color: #ffffff;
+}
+
+
+
+.whiteFont{
+	color:white;
+}
+
+.blackFont{
+	color:black;
+}
+
+.redFont{
+	color:red;
+}
+
+.bold{
+	font-weight: bold;
+}
+
+.fontSize1{
+	font-size: 100%;
+}
+
+.fontSize2{
+	font-size: 200%;
+}
+
+.fontSize3{
+	font-size: 250%;
+}
+
+.hidden{
+	display: none;
+}
+
+.showInLine{
+	display: show;
+}
+
+.show{
+	display: block;
+}
+
+.leftBorder{
+	border-left: 0.5px #566573 solid;
+}
+
+.transparentBlackBackground{
+	background-color: rgba(0,0,0,0.8);
+}
+
+.transparentBlackBackground2
+{
+	background-color: rgba(0,0,0,0.2);
+}
+
+.transparentBlackBackground3
+{
+	background-color: rgba(0,0,0,0.5);
+}
+
+.transparent
+{
+	background-color: transparent;
+}
+
+.enableScroll{
+	overflow: scroll;
+}
+
+.enableScrollOnY{
+	overflow-y: scroll;
+}
+
+.optionIcon{
+	opacity: 0.5;
+}
+
+.optionIcon:hover{
+	opacity: 1;
+	transition: all 0.5s;
+}
+
+.shadowBox1{
+	box-shadow: 0px 0px 50px 0.5px #282828;
+}
+
+.addShadowHover:hover{
+	box-shadow: 0px 0px 20px 0.01px #282828;
+	transition: all 1s;
+}
+
+/*Cosas basicas*/
+
+/*Forms*/
+
+
+.formContainer input{
+	margin: auto;
+
+	padding: 18px;
+
+	border: none;
+	border-radius: 2px;
+
+	width: 80%;
+
+	margin-bottom: 1px;
+
+}
+
+
+.formContainer input[type="text"],input[type="password"],input[type="email"],input[type="number"]{
+	font-size: 17px;
+}
+
+/*Botonera alternativa*/
+
+#alternativeButtons button{
+	background-color: rgba(209,209,209,0.25);
+
+	padding: 10px;
+	margin: 20px;
+
+	cursor: pointer;
+
+	margin-left:0;
+
+}
+
+
+#alternativeButtons span{
+	color: white;
+	font-size: 15px;
+	font-weight:bold;
+
+}
+
+
+
+/*Configuramos los puntos de seleccion*/
+.dot {
+	opacity: 0.5;
+
+	margin-top: 10px;
+	margin-bottom: 10px;
+
+	width: 10px;
+	height: 10px;
+
+	border: 3px #bdc3c7 solid;
+	border-radius: 100%;
+}
+
+.dot:hover{
+	opacity: 1;
+}
+
+.active{
+	opacity: 1;
+	background-color: #bdc3c7;
+}
+/*Aca termina la configuracion de los puntos*/
+
+
+
+
+/*Configuramos el menu desplazamiento*/
+
+#dotMenu{
+	position: fixed;
+	top:50%;
+
+	z-index: 1;
+
+	margin-top: -30px;
+	margin-left: 30px;
+}
+
+#headingText{
+	margin-bottom: 2%;
+}
+
+/*Aca termina la configuracion del menu desplazamiento*/
+
+/*Configuracion de las secciones*/
+
+.section{
+	position: relative;
+	height: 100%;
+}
+
+#firstSection {
+	background-color: rgba(0,0,0,0.2);
+	height: 92%;
+}
+
+#secondSectionContainer{
+	height: 116%;
+	top:0%;
+	background-color: #56BC8A;
+}
+
+#secondSection{
+	height: 108%;
+}
+
+#thirdSection{
+	background-color:  #af7ac5;
+}
+
+#sectionTitle{
+	position: relative;
+	top:2.5%;
+	width: 100%;
+	height: 8%;
+	text-align: center;
+}
+
+#secondSection .headFirstSection{
+	position: absolute;
+	top: 60px;
+}
+
+#secondSection .firstText{
+	/*background-color: red;*/
+	width: 28%;
+
+	position: absolute;
+	top:19%;
+	left: 10%;
+}
+
+#secondSection .firstPhoto{
+	width: 25%;
+	
+	position: absolute;
+	left: 50%;
+	top:30%;
+
+}
+
+/*Aca termina la configuracion*/
+
+
+/*Hacemos el lugar donde el usuario puede crearse una cuenta o iniciar sesion*/
+
+.formContainer{
+	width:350px;
+	height: 275px;
+	text-align: center;
+
+	position: absolute;
+	top:50%;
+	left: 50%;
+
+	
+	margin-top: -137.5px;
+	margin-left: -175px;
+}
+
+.formContainer button{
+	width: 75%;
+	height: 20%;
+
+	margin-top:5px;
+	margin-bottom:5px;
+
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.formContainer .logo {
+	width: 100%;
+	height: 30%;
+
+	margin-top:5%; 
+}
+
+/*Aca termina la configuracion*/
+
+/*Le damos un fondo a la pagina. Con la funcion creada en js el body ira cambiando de clase
+y asi cambiando a los diferentes fondos*/
+
+.slider0{
+    background: url(../img/backgrounds/1.jpg);
+    background-size: cover;
+}
+
+.slider1{
+    background: url(../img/backgrounds/2.jpeg);
+    background-size: cover;
+}
+
+.slider2{
+    background: url(../img/backgrounds/3.jpeg);
+    background-size: cover;
+}
+
+.slider3{
+    background: url(../img/backgrounds/4.jpeg);
+    background-size: cover;
+}
+
+
+/*Aca termina la configuracion*/
+
+/*Configuro pequeña animacion en los botones*/
+
+.button{
+	cursor: pointer;     /*hace que cuando te pares arriba del boton apareza la manito]*/
+}
+
+.buttonText{
+	text-align: center;
+	font-family: helvetica;
+	font-size: 18px;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+
+.buttonText:after{
+	  content: '\00bb';
+	  position: absolute;
+	  opacity: 0;
+	  top: 0;
+	  right: -20px;
+	  transition: 0.5s;
+}
+
+.button:hover .buttonText{
+	padding-right: 20px;
+}
+
+.button:hover .buttonText:after{
+  opacity: 1;
+  right: 0;
+}
+/*Acá termina*/
+
+
+/*Hacemos la configuracion de las ventanas de la pagina del evento*/
+
+
+#eventWindow{
+	width: 90%;
+	height: 100%;
+
+	position: absolute;
+	left: 10%;
+	top: 0; 
+}
+
+
+/*Aca termina*/
+
+
+/*La plantilla de la creacion del evento va aca*/
+.animatedBackground{
+	background-image: url("../img/gifs/animation7.gif");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#eventCreator{
+	width: 100%;
+	height: 100%;
+
+}
+
+
+
+
+#logo{
+	width: 50%;
+
+	position: absolute;
+	left: 25%;
+
+	margin-top: 10%;
+}
+
+
+
+#avatar{
+	height: 28%;
+	width: 15%;
+
+	position: absolute;
+	top:20%;
+	left: 50%;
+
+	margin-left: -7.5%;
+}
+
+#avatar img{
+	height: 100%;
+	width: 100%;
+}
+
+#eventCreator input[type="text"],input[type="date"],input[type="time"]{
+
+	width: 50%;
+	height: 10%;
+
+	border-bottom: 2px white solid;
+
+}
+
+#eventCreator input[type="text"]{
+	position: absolute;
+	top:45%;
+	left: 25%;
+}
+
+#eventCreator input[type="date"]{
+	position: absolute;
+	top:35%;
+	left: 25%;
+}
+
+#eventCreator input[type="time"]{
+	position: absolute;
+	top:50%;
+	left: 25%;
+}
+
+#eventCreator form > div{
+
+	width: 100%;
+	height: 100%;
+
+}
+
+#eventCreator form {
+	width: 100%;
+	height: 100%;
+}
+
+
+.heading{
+	position: relative;
+	padding-top: 3%;
+}
+
+.heading2{
+	position: relative;
+	top: 80%;
+}
+
+#introduction img{
+	position: relative;
+	margin-top:5%;
+	width: 40%;
+}
+
+#backProfileButton,#nextButton,#backButton{
+	width: 20%;
+	height: 7%;
+	bottom: 2%;
+}
+
+#backProfileButton{
+	position: absolute;
+	left: 1%;
+}
+
+#nextButton{
+	position: absolute;
+	right: 1%;
+}
+
+#backButton{
+	position: absolute;
+	right: 22%;
+}
+
+#addEventButton{
+	position: absolute;
+	
+	margin-left: 50%;
+	left: -8%;
+	top:75%;
+
+	height: 8%;
+	width: 16%;
+}
+
+#eventCreator table{
+	display: block;
+	width: 50%;
+	position: absolute;
+	left: 25%;
+	top: 35%;
+}
+
+#eventCreator table tr{
+	display: block;
+	text-align: center;
+}
+
+/*Aca termina*/
+
+
+/*Damos la configuracion para la notificacion de errores de la creacion del evento*/
+
+#notificationBox{
+	position: absolute;
+	left: 12.5%;
+	top:75%;
+}
+
+#notificationBox img{
+	position: absolute;
+	left:30%;
+	top:25%;
+}
+
+#notificationBox span{
+	position: absolute;
+	top:50%;
+	left: 42%;
+}
+
+
+
+
+
+
+/*Barra para usarla a veces en varias pantallas*/
+#banner{
+	height: 7%;
+	background-color: transparent;
+}
+
+#banner img {
+	height: 100%; 
+}
+/*Aca termina*/
+
+/*Configuramos el panel de informacion del portal del evento*/
+
+#information{
+	position: absolute;
+}
+
+#information #logoEventoDiv{
+
+	width: 10%;
+	margin-left: 45%;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+#information #logoEventoDiv .optionIcon{
+	position: absolute;
+	width: 15%;
+	bottom: -15%;
+	left: 45%;
+}
+
+#information #logoEvento{
+	width: 100%;
+	height: 100%;
+}
+
+
+#information #description{
+	position: relative;
+	left: 37.5%;
+	background-color: red;
+	margin-bottom: 5%;
+
+}
+
+/*Aca termina*/
+
+/*Configuramos el contenedor donde se usará para cambiar informacion de una manera mas comoda*/
+
+.editBox{
+	position: absolute;
+	left:25%;
+	top:40%;
+}
+
+.editBox form{
+	position: absolute;
+	top: 23%;
+	width: 100%;
+	height: 77%;
+}
+
+#editBoxTitleDiv{
+	position: relative;
+	top: 20px;
+}
+
+.editBox button{
+	position: absolute;
+	height: 25%;
+	width: 50%;
+
+	top:76%;
+
+	border-radius: 0;
+}
+
+.editBox #changeButton{
+	left: 50%;
+}
+
+.editBox #cancelButton{
+	left: 0%;
+}
+
+.editBox input{
+	position: relative;
+	top: 30%;
+
+	border-bottom: 1px solid #282828; 
+}
+
+#editBoxNotification{
+	left: 25%;
+	top:70%;
+}
+
+#errorIcon{
+	position: absolute;
+	top:25%;
+	left: 25%;
+}
+
+#notificationText{
+	position: absolute;
+	top:40%;
+	left: 15%;
+}
+
+/*Aca termina*/
+
+
+
+/*Configuramos el agregador de personas*/
+
+
+.addBox{
+	position: absolute;
+	left: 25%;
+	top: 12.5%;
+}
+
+.addBox button{
+	border-radius: 0;
+}
+
+.addBox #addButton{
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+}
+
+.addBox #cancelAddButton{
+	position: absolute;
+	bottom: 0;
+	left: 0%;
+}
+
+
+#addBoxTitle{
+	position: relative;
+	top: 5%;
+}
+
+.addBox .inputsBox{
+	position: absolute;
+	top:13%;
+}
+
+.addBox .inputDiv{
+	margin-bottom: 3%;
+}
+
+.addBox input{
+	border-bottom: 2px solid #282828; 
+}
+
+.addBox .labelText{
+	position: relative;
+	top:15%;
+	left: 10%;
+}
+
+.addBox .labelTextNotification{
+	position: relative;
+	top:15%;
+	left: 10%;
+}
+
+.addBox .tableList{
+	position: absolute;
+	left: 12.5%;
+	top: 15%;
+
+	border: 1px solid #566573;
+	border-radius: 1%;  
+}
+
+.addBox .tableList:hover{
+	border: 1px solid rgb(82, 158, 204);
+
+	box-shadow: 0px 0px 20px 0px rgb(82, 158, 204);
+	transition: all 0.5s;
+
+}
+
+
+
+
+.addBox .tableList span{
+	position: relative;
+	top:25%;
+}
+
+.addBox input[type="radio"] ~ label{
+	background-color: transparent;
+}
+
+.addBox input[type="radio"]:hover ~ label{
+	background-color: rgb(82, 158, 204);
+	transition: all 0.5s;
+}
+
+.addBox input[type="radio"]:checked ~ label{
+	background-color: rgb(82, 158, 204);
+	transition: all 0.5s;
+}
+
+/*Aca termina*/
+
+/*Configuramos las clases de error de formulario*/
+
+.errorForm{
+	background-color: #ffd8d8;
+}
+
+.disabled{
+	background-color: grey;
+	padding: 15px;
+
+	width: 40%;
+
+	margin-top: 20px;
+
+	transition: background-color 1s;
+}
+
+
+#exitMessage{
+	left: 12.5%;
+	top:15%;
+}
+
+#exitMessage img{
+	margin-top: 10%;
+}
+
+#uniqueButton{
+	position: absolute;
+	top:75%;
+	left:37.5%;
+	width: 25%;
+	height: 50px;
+	background-color: #36465D;
+	color:white;
+	box-shadow: 0px 0px 5px 0.8px black;
+	border-radius: 10px;
+}
+
+#uniqueButton:hover{
+	background-color: rgb(82, 158, 204);
+	color: black;
+	box-shadow: 0px 0px 50px 0.8px black;
+	transition: all 1s;
+}
+
+#uniqueButton a{
+	position: relative;
+	top:32%;
+	color:white;
+}
+
+.imagen{
+	  position: absolute;
+ 		top: 15%;
+ 		left: 40%;
+
+}
+
+.mockup{
+  max-width: 88%;
+  height: auto;
+}
+
+.interlineado{
+	line-height: 2;
+}

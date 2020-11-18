@@ -1,0 +1,142 @@
+
+.guestConfirmationPage{
+	margin: 0;
+	padding: 0;
+
+	background-image: url(../img/backgrounds/2.jpg);
+
+	background-size: cover;
+
+	font-family: 'Open Sans', sans-serif;
+
+
+}
+
+
+/*Recuadro principal*/
+.main{
+	margin: auto;
+	position: relative;
+
+	height: 85%;
+	width: 50%;
+
+	background-color: rgba(255,255,255,0.7);
+
+	border-radius: 10px;
+
+	padding: 20px;
+
+	top: 20px;
+}
+
+
+/*Aca va todo lo que tiene que ver con la invitacion*/
+.partyInfo{
+	margin-bottom: 0;
+}
+.partyInfo span{
+	display: block;
+
+	text-align: center;
+
+	font-size: 20px;
+
+}
+
+.partyInfo h2{
+	text-align: center;
+
+	font-size: 25px;
+}
+
+.partyInfo h3{
+	text-align: center;
+
+	font-size: 40px;
+
+	margin-bottom: 20px;
+}
+
+
+
+/*Formulario de confirmacion de asistencia*/
+
+.confirmacion > * {
+	display: block;
+
+	margin: auto;
+
+}
+
+/*Select de confirmacion de asistencia*/
+
+
+.buttonIcon{
+	position: absolute;
+	height: 150%;
+	z-index: 100;
+
+	cursor: pointer;
+}
+
+.confirmationButton input{
+	display: none;
+}
+
+.confirmationButton span{
+	width: 100%;
+	position: absolute;
+	top:48%;
+	z-index: 100;
+	opacity: 0;
+	transition: all 1s;
+
+}
+
+.confirmationButton{
+	display: inline-block;
+	position: relative;
+	width: 95%;
+	height: 50px;
+
+	margin: 15px;
+}
+
+.barraMovil{
+	display: inline-block;
+	position: absolute;
+	height: 150%;
+	width: 75px; 
+	border-radius: 100px;
+	transition: all 1s;
+}
+
+.confirmationButton input:checked ~ .barraMovil{
+	width: 100%;
+	transition: all 1s;
+	}
+
+.confirmationButton input:checked ~ span{
+	opacity: 1;
+	transition: all 5s;
+}
+
+
+/*Tamaño del boton enviar formulario*/
+.main button{
+	margin-top: 20px;
+}
+
+.confirmacion .button{
+	padding: 15px;
+	width: 40%;
+}
+
+.buttonText{
+	font-weight: bold;
+}
+
+
+
+

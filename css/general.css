@@ -1,0 +1,37 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    text-decoration-line: none;
+    scroll-behavior: smooth;/*El desplazamiento de la pagina sera suave, y no tan directo*/
+    border:0px;
+}
+
+ol,ul{
+    list-style: none;
+}
+
+
+html,body{
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: Arial;
+    height: 100%;
+}
+
+div {
+    position: relative;
+}
+
+p {
+    margin: 0px 0px;
+    line-height: 20px;
+    width: 100%;
+}
+
+button{
+    border-radius: 3px;
+}
