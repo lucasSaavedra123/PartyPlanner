@@ -47,8 +47,7 @@ Luego ir a un navegador y dirigirse a
 
 ## Descripción de la base de datos
 
-<div align='center'>![Visualización gráfica de la base de datos](dataBaseGraphicDescription.png)</div>
-
+![Visualización gráfica de la base de datos](dataBaseGraphicDescription.png)
 
 La base de datos diseñada para este proyecto esta formada por 4 tablas. A continuación se las describe:
 
